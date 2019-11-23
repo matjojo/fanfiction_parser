@@ -19,6 +19,7 @@ def main():
 	with open("links.txt", "a+") as file:
 		for link in links:
 			file.write(link + "\n")
+		print("Wrote {} links to file.".format(len(links)))
 
 
 if __name__ == "__main__":
