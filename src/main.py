@@ -10,8 +10,8 @@ def main():
 	url = "https://" + urllib.parse.quote(url)
 	links = []
 	if "fanfiction.net" in url:
-		links = fanfiction_net.get_links(url)
 		print("fanfiction.net link detected")
+		links = fanfiction_net.get_links(url)
 	elif "archiveofourown.org" in url:
 		print("archiveofourown.org link detected")
 		links = archive_of_our_own_org.get_links(url)
